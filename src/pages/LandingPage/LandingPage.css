@@ -6,9 +6,10 @@
 
 .background{
     position: relative;
-    height: 2500px;
+    min-height: 2500px;
     /* border: 1px solid white; */
     overflow: hidden;
+    padding-bottom: 50px;
 }
 
 .background::before{
