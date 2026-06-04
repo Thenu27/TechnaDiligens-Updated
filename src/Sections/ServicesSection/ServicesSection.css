@@ -1,0 +1,237 @@
+.services-section{
+    background-color: #161514;
+    height: 1100px;
+    overflow-x: hidden;
+}
+
+.services-section h1{
+    font-size: 100px ;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    line-height: 77%;
+    padding-top:103px;
+}
+
+.highlight-2{
+    color: #702406;
+}
+
+.services-section p{
+    width: 850px;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 176%;
+}
+
+.services-container{
+    height: 600px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:40px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    
+}
+
+.services-card{
+    background-color: #4F3E3E;
+    width: 360px;
+    height: 270px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+  width: 250px;
+  height: 55px;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  filter: blur(18px);
+
+  border-radius: 50%;
+}
+
+.services-card button{
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    border-radius: 21px;
+    background-color: #815252;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.services-card button:hover{
+    transform: translateY(-5px);
+}
+
+.service-experience{
+    /* border: 1px solid white; */
+    position: absolute;
+    top: -30%;
+    left: 4.5%;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+}
+
+/* ── Tablet Landscape (≤1024px) ── */
+@media (max-width: 1024px) {
+  .services-section {
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .services-section h1 {
+    font-size: 80px;
+    width: 90%;
+    padding-top: 80px;
+  }
+
+  .services-section p {
+    width: 85%;
+    font-size: 18px;
+  }
+
+  .services-container {
+    height: auto;
+    gap: 30px;
+    padding-top: 50px;
+  }
+
+  .services-card {
+    width: 300px;
+    height: 240px;
+  }
+
+  .shadow {
+    width: 210px;
+    left: 12%;
+  }
+
+  .services-card button {
+    width: 210px;
+    left: 12%;
+    font-size: 18px;
+  }
+}
+
+/* ── Tablet Portrait (≤768px) ── */
+@media (max-width: 768px) {
+  .services-section h1 {
+    font-size: 64px;
+    width: 90%;
+    line-height: 85%;
+    padding-top: 70px;
+  }
+
+  .services-section p {
+    width: 90%;
+    font-size: 17px;
+  }
+
+  .services-container {
+    gap: 24px;
+    padding-top: 40px;
+    width: 95%;
+  }
+
+  .services-card {
+    width: calc(50% - 20px);  /* 2-column grid */
+    min-width: 260px;
+    height: 230px;
+  }
+
+  .services-card button {
+    width: 80%;
+    left: 10%;
+    font-size: 17px;
+    height: 54px;
+  }
+
+  .shadow {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+/* ── Large Mobile (≤576px) ── */
+@media (max-width: 576px) {
+  .services-section h1 {
+    font-size: 55px;
+    width: 90%;
+    padding-top: 60px;
+    line-height: 90%;
+  }
+
+  .services-section p {
+    width: 90%;
+    font-size: 16px;
+    padding-top: 16px;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 36px;
+    width: 90%;
+  }
+
+  .services-card {
+    width: 100%;
+    max-width: 360px;
+    height: 240px;
+  }
+
+  .services-card button {
+    width: 70%;
+    left: 15%;
+    font-size: 16px;
+    height: 52px;
+  }
+
+  .shadow {
+    width: 70%;
+    left: 15%;
+  }
+}
+
+/* ── Small Mobile (≤375px) ── */
+@media (max-width: 375px) {
+  .services-section h1 {
+    font-size: 50px;
+  }
+
+  .services-section p {
+    font-size: 15px;
+  }
+
+  .services-card {
+    height: 220px;
+  }
+
+  .services-card button {
+    font-size: 15px;
+    height: 48px;
+  }
+}

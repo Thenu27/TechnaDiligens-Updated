@@ -1,0 +1,28 @@
+.landing-page{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.background{
+    position: relative;
+    height: 2500px;
+    /* border: 1px solid white; */
+    overflow: hidden;
+}
+
+.background::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/Techna-bg.png');
+    background-size: cover;
+    background-position: center;
+    
+    transform: scaleY(-1);
+}
+
+.background > *{
+    position: relative;
+    z-index: 1;
+}

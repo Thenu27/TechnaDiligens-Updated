@@ -1,0 +1,160 @@
+.project-page{
+    background-image: url('/Techna-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    height: 1200px;
+    width: 100%;
+    margin: 0%;
+    overflow-x: hidden;
+
+}
+
+.project-page h1{
+  font-size: 96px;  
+  text-align: center;
+  padding-top: 100px;
+}
+
+.project-page p{
+  font-size: 21px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 176%;
+  width: 80vw;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.project-page-container{
+  /* border: 1px solid white; */
+  height: auto;
+  width: 70vw;
+  margin: auto;
+  padding-top: 71px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:40px;
+}
+
+.project{
+  border: 1px solid white;
+  height: 520px;
+  width: 400px;
+  background-color: #B7B7B7;
+  border-radius: 24px;
+  box-shadow: 0px 7px 35px rgba(0,0,0,0.25);
+  border: none;
+
+}
+
+.project iframe{
+  border-radius: 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* ── Tablet Landscape (≤1024px) ── */
+@media (max-width: 1024px) {
+  .project-page {
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .project-page h1 {
+    font-size: 76px;
+    padding-top: 80px;
+  }
+
+  .project-page p {
+    font-size: 18px;
+    width: 88vw;
+  }
+
+  .project-page-container {
+    width: 85vw;
+    gap: 30px;
+    padding-top: 55px;
+  }
+
+  .project {
+    height: 480px;
+    width: 340px;
+  }
+}
+
+/* ── Tablet Portrait (≤768px) ── */
+@media (max-width: 768px) {
+  .project-page h1 {
+    font-size: 60px;
+    padding-top: 70px;
+  }
+
+  .project-page p {
+    font-size: 17px;
+    width: 90vw;
+  }
+
+  .project-page-container {
+    flex-direction: column;
+    width: 90vw;
+    align-items: center;
+    gap: 32px;
+    padding-top: 45px;
+  }
+
+  .project {
+    width: 100%;
+    max-width: 460px;
+    height: 500px;
+  }
+}
+
+/* ── Large Mobile (≤576px) ── */
+@media (max-width: 576px) {
+  .project-page h1 {
+    font-size: 46px;
+    padding-top: 60px;
+    line-height: 90%;
+  }
+
+  .project-page p {
+    font-size: 16px;
+    width: 90vw;
+    padding-top: 16px;
+  }
+
+  .project-page-container {
+    width: 92vw;
+    gap: 24px;
+    padding-top: 36px;
+  }
+
+  .project {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+  }
+
+  .project iframe {
+    height: 200px;
+  }
+}
+
+/* ── Small Mobile (≤375px) ── */
+@media (max-width: 375px) {
+  .project-page h1 {
+    font-size: 38px;
+  }
+
+  .project-page p {
+    font-size: 15px;
+  }
+
+  .project iframe {
+    height: 180px;
+  }
+}

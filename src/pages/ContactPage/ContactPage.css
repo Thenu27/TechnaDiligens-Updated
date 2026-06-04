@@ -1,0 +1,156 @@
+.contact-page{
+    height: 900px;
+    border: 1px solid white;
+}
+
+.contact-page p{
+    width: 700px;
+}
+
+.contact-container{
+    /* border: 1px solid white; */
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-page-experience{
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 350px;
+}
+
+.contact-page-info-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 35px;
+    padding-top: 40px;
+}
+
+.contact-page-info{
+    width: 400px;  
+    height: 70px; 
+    background-color: #56372E;
+    border-radius: 16px;
+    box-shadow: 0px 7px 35px rgba(0,0,0,0.25);
+    color: white;
+    font-family: 'Inter',sans-serif;
+    font-size: 21px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    font-weight: 500;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-page-info:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 40px rgba(0,0,0,0.3);
+}
+
+/* ── Tablet Landscape (≤1024px) ── */
+@media (max-width: 1024px) {
+  .contact-page {
+    height: auto;
+    padding-bottom: 80px;
+    border: none;
+  }
+
+  .contact-page p {
+    width: 80%;
+  }
+
+  .contact-container {
+    width: 700px;
+  }
+
+  .contact-page-info {
+    width: 320px;
+    font-size: 18px;
+  }
+}
+
+/* ── Tablet Portrait (≤768px) ── */
+@media (max-width: 768px) {
+  .contact-page p {
+    width: 88%;
+    font-size: 17px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    width: 88vw;
+    height: auto;
+    gap: 32px;
+    padding-top: 32px;
+  }
+
+  .contact-page-experience {
+    width: 100%;
+    max-width: 340px;
+    height: 300px;
+    flex-shrink: 0;
+  }
+
+  .contact-page-info-container {
+    width: 100%;
+    align-items: center;
+    padding-top: 0;
+    gap: 20px;
+  }
+
+  .contact-page-info {
+    width: 100%;
+    max-width: 420px;
+    font-size: 17px;
+  }
+}
+
+/* ── Large Mobile (≤576px) ── */
+@media (max-width: 576px) {
+  .contact-page p {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .contact-container {
+    width: 92vw;
+    gap: 24px;
+  }
+
+  .contact-page-experience {
+    height: 250px;
+    max-width: 280px;
+  }
+
+  .contact-page-info {
+    height: 62px;
+    font-size: 15px;
+    border-radius: 12px;
+  }
+
+  .contact-page-info-container {
+    gap: 16px;
+  }
+}
+
+/* ── Small Mobile (≤375px) ── */
+@media (max-width: 375px) {
+  .contact-page-experience {
+    height: 210px;
+  }
+
+  .contact-page-info {
+    font-size: 14px;
+    height: 56px;
+  }
+}
